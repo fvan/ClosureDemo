@@ -1,0 +1,90 @@
+<project name="Closure">
+
+	<property name="BROWSERPATH" value="C:\Users\Frank.Vanderzwet\AppData\Local\Google\Chrome\Application\chrome.exe" />
+	
+	<target name="run-all">
+		<antcall target="run-with-target">
+			<param name="target" value="all" />
+		</antcall>
+	</target>
+	<target description="run single test" name="run-01">
+		<antcall target="run-with-target">
+			<param name="target" value="Test#test01" />
+		</antcall>
+	</target>
+    <target description="run single test" name="run-02">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test02" />
+        </antcall>
+    </target>
+    <target description="run single test" name="run-03">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test03" />
+        </antcall>
+    </target>
+    <target description="run single test" name="run-04">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test04" />
+        </antcall>
+    </target>
+    <target description="run single test" name="run-05">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test05" />
+        </antcall>
+    </target>
+    <target description="run single test" name="run-06">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test06" />
+        </antcall>
+    </target>
+    <target description="run single test" name="run-07">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test07" />
+        </antcall>
+    </target>
+    <target description="run single test" name="run-08">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test08" />
+        </antcall>
+    </target>
+    <target description="run single test" name="run-09">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test09" />
+        </antcall>
+    </target>
+    <target description="run single test" name="run-10-1">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test10_1" />
+        </antcall>
+    </target>
+    <target description="run single test" name="run-10-2">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test10_2" />
+        </antcall>
+    </target>
+    <target description="run single test" name="run-11">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test11" />
+        </antcall>
+    </target>
+    <target description="run single test" name="run-12">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test12" />
+        </antcall>
+    </target>
+    <target description="run single test" name="run-13">
+        <antcall target="run-with-target">
+            <param name="target" value="Test#test13" />
+        </antcall>
+    </target>
+	<target name="run-with-target">
+		<java jar="JsTestDriver.jar" fork="true" timeout="120000" failonerror="true">
+			<arg value="--port" />
+			<arg value="9876" />
+			<arg value="--browser" />
+			<arg value="${BROWSERPATH}" />
+			<arg value="--tests" />
+			<arg value="${target}" />
+		</java>
+	</target>
+</project>
