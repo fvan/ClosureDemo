@@ -1,0 +1,12 @@
+This project is a guessing game to be completed in a group or alone. It focuses on closures. It is based on this blog post : http://fvanblog.blogspot.ca/2012/06/closures-with-focus-on-javascript.html
+
+1. Go to https://github.com/fvan/ClosureDemo and click the zip button to download as a zip
+
+2. Create a new generic project in eclipse
+
+3. Edit build.xml, change browser path to your chrome browser path. 
+On windows this can be found by clicking windows > all programs > find google chrome > right click properties, somewhere on this window there should be the path to the exe.
+
+4. Window > Show View > Ant and drag and drop build.xml
+
+5. Double click to run whichever labeled test you want
