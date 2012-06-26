@@ -10,3 +10,5 @@ On windows this can be found by clicking windows > all programs > find google ch
 4. Window > Show View > Ant and drag and drop build.xml
 
 5. Double click to run whichever labeled test you want
+
+6. Guess the alerts before you run it
